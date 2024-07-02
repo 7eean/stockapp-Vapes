@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Stock de Vapes</title>
+</head>
+<body>
+    <h1>Stock de Vapes Society</h1>
+    
+    <form id="productForm">
+        <label for="productName">Nombre:</label>
+        <input type="text" id="productName" required>
+        
+        <label for="productFlavor">Sabor:</label>
+        <input type="text" id="productFlavor" required>
+        
+        <label for="productStock">Stock:</label>
+        <input type="number" id="productStock" required>
+        
+        <label for="productPriceRetail">Precio Minorista:</label>
+        <input type="number" id="productPriceRetail" step="0.01" required>
+        
+        <label for="productPriceWholesale">Precio Mayorista:</label>
+        <input type="number" id="productPriceWholesale" step="0.01" required>
+        
+        <button type="submit">Agregar Producto</button>
+    </form>
+    
+    <h2>Listado de Productos</h2>
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Sabor</th>
+                <th>Stock</th>
+                <th>Precio Minorista</th>
+                <th>Precio Mayorista</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="productList">
+            <!-- Aquí se insertarán dinámicamente los productos -->
+        </tbody>
+    </table>
+    
+    <script src="app.js"></script>
+</body>
+</html>
